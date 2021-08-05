@@ -1,0 +1,186 @@
+h2{
+    font-family: 'Courgette', cursive;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Enc{
+    height: 90vh;
+    background-image: url("https://curiositemujer.com/wp-content/uploads/2019/10/Orden-maquillaje.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+.Enc>ul> li>h4{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 5em;
+    color: #f28482;
+}
+li>h2{
+    font-family: 'Source Code Pro', monospace;
+    color:#bc6c25;
+    font-size: 3em;
+    text-align: center;
+}
+button{
+    padding: 1em 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color:#ffa260;
+    border: 5px #ffa260 ;
+    border-style: double;
+    background-clip: padding-box; /* support: IE9+ */
+    transition: transform 0.25s,box-shadow 0.25s;
+}
+button:hover{
+    color: #7400b8;
+    box-shadow: 0 0.5em 0.5em -0.15em #feeafa ;
+    transform: translateY(-0.3em);
+}
+
+.Des, .Productos{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.Des{
+    background-color: #9bf6ff;
+}
+.Desc>img{
+    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 70%;
+    height: 70%;
+    border: 0.3em solid darkblue;
+    border-radius: 4%;
+}
+
+.Des>article{
+    margin: 4%;
+    margin-left: 5%;
+    width: 70%;
+    text-align: justify;
+    color: #bdb2ff;
+}
+header>h2{
+    font-size: 2.2em;
+    color: white;
+}
+header>h1{
+    font-size: 2.5em;
+}
+
+.Prod{
+    background-color: #ffdab9;
+    color: white;
+}
+.Prod>article{
+    margin: 4%;
+    margin-left: 15%;
+}
+p{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5em;
+}
+.Prod>ul{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li>p{
+    width: 90%;
+}
+li>img{
+    width: 230px;
+    height: 230px;
+    flex-grow: 1;
+}
+#precio{
+    color: #a44a3f;
+}
+#articulo{
+    font-size: 1.5em;
+    color: #a44a3f;
+}
+aside{
+    background-color: #d0d1ff;
+}
+aside>ul>li>p{
+    text-align: left;
+    font-size: 1em;
+}
+
+footer{
+    padding: 0.5%;
+    background-color: #ffafcc;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.8em;
+    text-align: center;
+}
+#pie{
+    color: #48cae4;
+    font-family: 'Courgette', cursive;
+}
+@media (max-width: 880px){
+    .Des>img{
+        margin: 5%;
+        width: 85%;
+        height: 85%;
+    } 
+    header>h1{
+        font-size: 1.5em;
+    }  
+    p{
+        font-size: 1.2em;
+    }
+    li>h2{
+        font-size: 2.6em;
+    }
+}
+@media (max-width: 650px){
+    .Prod{
+        display: flex;
+        flex-direction: column;
+    }
+    .Des{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Des>article{
+        padding:0 5%;
+    }
+    li>h2{
+        font-size: 2.2em;
+    }
+    li>img{
+        width: 80%;
+        height: auto;
+        flex-grow: 1;
+    }
+}
+@media (max-width: 415px){
+    li>h2{
+        font-size: 1.8em;
+    }
+    
+    .Enc>ul> li>h4{
+        font-size: 0.8em;
+    }
+    button{
+        padding: 1em 2em;
+        font-size: 0.5em;
+    }
+}
